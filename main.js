@@ -48,3 +48,8 @@ function generateQRCode(){
         colorDark:"#000",
     });
 }
+document.getElementById('modeToggle').addEventListener('change', function() {
+    // Toggle dark mode classes
+    document.body.classList.toggle('dark-mode');
+    document.querySelector('.box').classList.toggle('dark-mode');
+});
